@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoBig Tours</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero-bg">
+            <div class="bg-img">
+                <img src="assets/imgs/new-Hero-Image.jpg" alt="bg-pic">
+            </div>
+            <header class="header" id="header">
+                <div class="hero-section">
+                    <div class="cdbd-container">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/imgs/logo.png" width="165" height="91" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+            </header>
+            <div class="hero-wrapper">
+                <div class="cdbd-container">
+                    <div class="hero-content text-center">
+                        <h1>The Dominican Republic is<br /> so much more than all<br /> inclusive resorts!</h1>
+                        <div class="hero-features">
+                            <div class="feature-single">
+                                <img src="./assets/imgs/1.jpg" alt="">
+                                <p>Rich History</p>
+                            </div>
+                            <div class="feature-single">
+                                <img src="./assets/imgs/2.jpg" alt="">
+                                <p>Dramatic Mountains and Waterfalls</p>
+                            </div>
+                            <div class="feature-single">
+                                <img src="./assets/imgs/3.jpg" alt="">
+                                <p>World Class Coffee Cigars and Chocolate</p>
+                            </div>
+                            <div class="feature-single">
+                                <img src="./assets/imgs/4.jpg" alt="">
+                                <p>World-class whale watching</p>
+                            </div>
+                            <div class="feature-single">
+                                <img src="./assets/imgs/5.jpg" alt="">
+                                <p>Idylic Beaches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="visitor-wrapper">
+            <div class="cdbd-container">
+                <div class="section-heading text-center">
+                    <h2>8 million visitors a year and growing</h2>
+                    <div class="sub-heading">
+                        <span>99% will follow the herd</span><br /><br />
+                        <span class="sub-heading-top">1% will experience the real Dominican Republic</span>
+                        <h2 class="sub-heading-h">Leave the herd behind</h2>
+                    </div>
+                    <a href="#!" class="btn" onclick="openPopup()">Join the 1%</a>
+                </div>
+            </div>
+            <!-- /////// Popup Section Area By Rubel /////////// -->
+            <div class="popup-area" id="popupid">
+                <div class="two-popup-side">
+                    <div class="head-popup">
+                        <h3>Leave the herd behind</h3>
+                    </div>
+                    <div class="popu-section">
+                        <div class="popup-righ-side">
+                            <p>Join a small group of fellow travelers for 11 days of exploration.</p>
+                            <button class="btn popupbtn">See Tour</button>
+                        </div>
+                        <div class="popup-middle-side">
+                            <span>OR</span>
+                        </div>
+                        <div class="popup-left-side">
+                            <p>Customize a private tour for yourself or a group of any size.</p>
+                            <button class="btn popupbtn">See Options</button>
+                        </div>
+                    </div>
+                    <button class="popup-close" onclick="closePopup()">x</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-class">
+            <div class="visitor-wrapper-bg">
+                <img src="assets/imgs/before-footer-img.png" alt="visitor-wrapper-img">
+            </div>
+            <footer class="footer" id="footer">
+                <div class="cdbd-container">
+                    <div class="footer-top">
+                        <div class="foo-top-content text-center">
+                            <a href="#!" class="footer-logo"><img src="./assets/imgs/logo.png" width="165" height="91"
+                                    alt="logo"></a>
+                            <p>At Go BIG we believe that tourism when done right, benefits the traveler and the destination.
+                                Come make the world a better place with us!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="cdbd-container">
+                        <div class="foo-bottom-content">
+                            <div class="foo-content-left">
+                                <img src="./assets/imgs/location.jpg" alt="marker">
+                                <p>Go BIG Tours: 30 N Gould St, Suite R Sheridan, WY 82801</p>
+                            </div>
+                            <div class="foo-content-right">
+                                <a href="#!">Terms and Conditions</a>
+                                <a href="#!">Privacy Policy</a>
+                                <a href="#!">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Popup Scrip Area -->
+    <script>
+        let popupver = document.getElementById("popupid");
+        function openPopup() {
+            popupver.classList.add("openPopupClass");
+        }
+        function closePopup() {
+            popupver.classList.remove("openPopupClass");
+        }
+    </script>
+</body>
+
+</html>
